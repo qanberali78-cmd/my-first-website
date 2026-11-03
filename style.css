@@ -1,20 +1,131 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: #101827;
+    font-family: Arial, sans-serif;
+    background: #080d1b;
     color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    background: #0c1428;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span, .hero span, .about span {
+    color: #2589ff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #2589ff;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-family: Arial;
-    padding-top: 100px;
+    padding: 30px;
+    background: radial-gradient(circle at center, #142b50, #080d1b 65%);
 }
 
-h1 {
-    color: #38bdf8;
+.tag {
+    color: #2589ff;
+    letter-spacing: 4px;
+    font-size: 13px;
+    margin-bottom: 25px;
 }
 
-button {
-    background: #2563eb;
+.hero h1 {
+    font-size: clamp(40px, 7vw, 75px);
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    color: #aab8d0;
+    font-size: clamp(20px, 3vw, 30px);
+}
+
+.description {
+    color: #94a3b8;
+    max-width: 500px;
+    line-height: 1.8;
+    margin: 25px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #2589ff;
     color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0864d5;
+    transform: translateY(-4px);
+}
+
+.about {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.about h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: #94a3b8;
+    line-height: 1.7;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #64748b;
+    background: #0c1428;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
 }
