@@ -2,42 +2,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qanber Ali Mughal | Portfolio</title>
-    <link rel="stylesheet" href="style.css?v=3">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Qanber Ali Mughal | Personal Website</title>
+
+  <meta name="description" content="Welcome to the personal website of Qanber Ali Mughal — student, aspiring developer and creator.">
+
+  <meta name="theme-color" content="#080d1c">
+
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
+
 <body>
 
-    <nav class="navbar">
-        <a href="#" class="logo">QAM<span>.</span></a>
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </div>
+  <header class="navbar">
+    <a href="#" class="logo">QAM<span>.</span></a>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
+  </header>
 
+  <main>
     <section class="hero" id="home">
-        <p class="tag">WELCOME TO MY WEBSITE</p>
+      <div class="hero-content">
+        <p class="welcome">WELCOME TO MY WORLD</p>
+
         <h1>I'm <span>Qanber Ali</span></h1>
-        <h2>Future Developer & Creator</h2>
-        <p class="description">
-            Learning to build amazing things with code.
-            This is my personal space on the internet.
+
+        <h2>Student & Future Developer</h2>
+
+        <p class="intro">
+          Learning, creating and building my future
+          through technology, creativity and hard work.
         </p>
-        <a href="#about" class="btn">Explore More</a>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn">Explore My Work</a>
+          <a href="#about" class="btn secondary">About Me</a>
+        </div>
+      </div>
+
+      <div class="hero-glow">
+        <div class="glow-circle">QAM</div>
+      </div>
     </section>
 
-    <section class="about" id="about">
-        <h2>About <span>Me</span></h2>
-        <p>I'm Qanber Ali Mughal, a student learning web development.</p>
+    <section class="about section" id="about">
+      <p class="section-label">GET TO KNOW ME</p>
+      <h2>About <span>Me</span></h2>
+
+      <p>
+        I'm Qanber Ali Mughal, a student passionate about
+        technology, web development and creativity.
+        I'm currently learning how to turn ideas into
+        real digital experiences.
+      </p>
     </section>
 
-    <footer id="contact">
-        <p>© 2026 QAM. Built with passion.</p>
-    </footer>
+    <section class="projects section" id="projects">
+      <p class="section-label">WHAT I'M BUILDING</p>
+      <h2>My <span>Projects</span></h2>
 
-    <script src="script.js"></script>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>My First Website</h3>
+          <p>My first step into the world of web development.</p>
+          <a href="https://qanberali78-cmd.github.io/my-first-website/">
+            View Website →
+          </a>
+        </article>
+
+        <article class="project-card">
+          <h3>R78 Football Game</h3>
+          <p>A football game project I'm working on.</p>
+          <span class="coming-soon">Coming Soon</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <p class="section-label">LET'S CONNECT</p>
+      <h2>Thanks for <span>Visiting!</span></h2>
+      <p>More projects and ideas are on the way.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Qanber Ali Mughal. All rights reserved.</p>
+    <p>Built with passion and code.</p>
+  </footer>
+
+  <script src="script.js?v=4"></script>
 </body>
 </html>
+
